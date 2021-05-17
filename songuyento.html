@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Nguyên </title>
+</head>
+<body>
+<script>
+    function kiemtra(n) {
+        if ( n < 2) {
+            return false;
+        } else if ( n == 2 ) {
+            return false;
+        } else if ( n % 2 == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    let n = prompt('Nhập vào số nguyên tố bạn muốn tìm :');
+    let count = 0 ;
+    let number = 2 ;
+    let result = "" ;
+    while ( count < n) {
+        if (kiemtra(number)) {
+            count =  count + 1 ;
+            document.write(  result + number + ' ;');
+        }
+        number = number +1 ;
+    }
+    document.write(result);
+
+</script>
+
+</body>
+</html>
